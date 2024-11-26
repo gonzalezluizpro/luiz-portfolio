@@ -59,7 +59,7 @@ export const Testimonials = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Hear from organizations we've helped with their IT management and support needs
+            Hear from organizations we&apos;ve helped with their IT management and support needs
           </p>
         </div>
 

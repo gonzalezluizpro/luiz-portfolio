@@ -4,6 +4,7 @@ import { Services } from './components/Services';
 import { Expertise } from './components/Expertise';
 import { Certifications } from './components/Certifications';
 import { Contact } from './components/Contact';
+import { Testimonials } from './components/Testimonials';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Expertise />
       <Certifications />
+      <Testimonials />  {/* Add this line */}
       <div id="contact">
         <Contact />
       </div>

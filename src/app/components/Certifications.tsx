@@ -22,7 +22,7 @@ export const Certifications = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-16">
+    <section id="certifications" className="max-w-6xl mx-auto px-4 py-16">
       <h2 className="text-3xl font-bold text-center mb-12 text-black">Certifications & Credentials</h2>
       <div className="grid md:grid-cols-3 gap-6">
         {certifications.map((cert, index) => (
@@ -34,6 +34,6 @@ export const Certifications = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };

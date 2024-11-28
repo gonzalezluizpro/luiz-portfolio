@@ -14,20 +14,44 @@ export const Expertise = () => {
     "Generative AI Implementation"
   ];
 
-  return (
-    <div className="bg-gray-100 py-16">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-black">Technical Expertise</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {expertise.map((item, index) => (
-            <div key={index} 
-                 className="flex items-center gap-2 bg-white p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
-              <CheckCircle className="w-5 h-5 text-blue-600" />
-              <span className="text-black">{item}</span>
+  export const Contact = () => {
+    return (
+      <section id="contact" className="bg-gradient-to-r from-blue-600 to-blue-800 min-h-screen">
+        <div className="max-w-6xl mx-auto px-4 py-16">
+          <div className="bg-white rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-8 text-blue-600 text-center">Connect With Me</h2>
+            
+            <div className="space-y-6">
+              <div className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <Mail className="w-6 h-6 text-blue-600 mr-4" />
+                <div>
+                  <p className="font-semibold text-gray-900">Email</p>
+                  <a href="mailto:gonzalezluizpro@gmail.com" 
+                     className="text-blue-600 hover:text-blue-800">
+                    gonzalezluizpro@gmail.com
+                  </a>
+                </div>
+              </div>
+   
+              <div className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                <Linkedin className="w-6 h-6 text-blue-600 mr-4" />
+                <div>
+                  <p className="font-semibold text-gray-900">LinkedIn</p>
+                  <a href="https://www.linkedin.com/in/luizgonzalezpro/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-blue-600 hover:text-blue-800">
+                    luizgonzalezpro
+                  </a>
+                </div>
+              </div>
             </div>
-          ))}
+   
+            <p className="mt-8 text-center text-gray-600">
+              I am always open to discussing new projects and opportunities.
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
-  );
-};
+      </section>
+    );
+   };
